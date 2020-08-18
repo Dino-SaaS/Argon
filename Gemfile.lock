@@ -76,6 +76,8 @@ GEM
     crass (1.0.6)
     erubi (1.9.0)
     ffi (1.13.1)
+    font-awesome-rails (4.7.0.5)
+      railties (>= 3.2, < 6.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     i18n (1.8.5)
@@ -205,6 +207,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
+  font-awesome-rails
   jbuilder (~> 2.7)
   jquery-rails
   listen (~> 3.2)
