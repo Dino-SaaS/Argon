@@ -24,8 +24,8 @@
       <div class="header-body">
         <%= render partial: 'pages/dashboard/header', locals: {
               icon: 'home',
-              breadcrumb_1: 'Components',
-              breadcrumb_2: 'Icons'
+              breadcrumb_1: 'Tables',
+              breadcrumb_2: 'Tables'
         } %>
       </div>
     </div>
@@ -33,9 +33,14 @@
   <!-- Page content -->
   <div class="container-fluid mt--6">
     <div class="row">
-        <div class="col">
-          <%= render 'pages/tables/light' %>
-        </div>
+      <div class="col">
+        <%= render 'pages/tables/light' %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <%= render 'pages/tables/dark' %>
+      </div>
     </div>
     <%= render 'pages/footer' %>
   </div>
