@@ -2,6 +2,13 @@
 // Profile card
 //
 
+#profile-header {
+  min-height: 500px;
+  background-image: url('theme/profile-cover.jpg');
+  background-size: cover;
+  background-position: center top;
+}
+
 .card-profile-image {
     position: relative;
 
