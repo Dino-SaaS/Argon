@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get 'pages/dashboard'
   get 'pages/icons'
   get 'pages/profile'
+  get 'pages/tables'
 end
