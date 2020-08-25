@@ -12,25 +12,25 @@
         <!-- Nav items -->
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="<%= pages_dashboard_path %>">
+            <a class="nav-link <%= action_name.eql?('dashboard') ? 'active': '' %>" href="<%= pages_dashboard_path %>">
               <i class="ni ni-tv-2 text-primary"></i>
               <span class="nav-link-text">Dashboard</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<%= pages_icons_path %>">
+            <a class="nav-link <%= action_name.eql?('icons') ? 'active': '' %>" href="<%= pages_icons_path %>">
               <i class="ni ni-planet text-orange"></i>
               <span class="nav-link-text">Icons</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<%= pages_profile_path %>">
+            <a class="nav-link <%= action_name.eql?('profile') ? 'active': '' %>" href="<%= pages_profile_path %>">
               <i class="ni ni-single-02 text-yellow"></i>
               <span class="nav-link-text">Profile</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<%= pages_tables_path %>">
+            <a class="nav-link <%= action_name.eql?('tables') ? 'active': '' %>" href="<%= pages_tables_path %>">
               <i class="ni ni-bullet-list-67 text-default"></i>
               <span class="nav-link-text">Tables</span>
             </a>
