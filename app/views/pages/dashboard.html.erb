@@ -15,11 +15,20 @@
 -->
 <!DOCTYPE html>
 <%= render 'pages/dashboard/sidenav' %>
-<!-- Main content -->
 <div class="main-content" id="panel">
   <%= render 'pages/dashboard/topnav' %>
-  <%= render 'pages/dashboard/header' %>
-  <!-- Page content -->
+  <div class="header bg-primary pb-6">
+    <div class="container-fluid">
+      <div class="header-body">
+        <%= render partial: 'pages/dashboard/header', locals: {
+              icon: 'home',
+              breadcrumb_1: 'Dashboards',
+              breadcrumb_2: 'Default'
+        } %>
+        <%= render 'pages/dashboard/metrics_summary' %>
+      </div>
+    </div>
+  </div>
   <div class="container-fluid mt--6">
     <div class="row">
       <div class="col-xl-8">
