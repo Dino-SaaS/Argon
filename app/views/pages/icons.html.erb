@@ -15,14 +15,14 @@
 -->
 <!DOCTYPE html>
   <!-- Sidenav -->
-<%= render 'pages/dashboard/sidenav' %>
+<%= render 'pages/sidenav' %>
 <!-- Main content -->
 <div class="main-content" id="panel">
-  <%= render 'pages/dashboard/topnav' %>
+  <%= render 'pages/topnav' %>
   <div class="header bg-primary pb-6">
     <div class="container-fluid">
       <div class="header-body">
-        <%= render partial: 'pages/dashboard/header', locals: {
+        <%= render partial: 'pages/header', locals: {
               icon: 'home',
               breadcrumb_1: 'Components',
               breadcrumb_2: 'Icons'

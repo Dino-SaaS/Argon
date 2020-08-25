@@ -14,13 +14,13 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 -->
 <!DOCTYPE html>
-<%= render 'pages/dashboard/sidenav' %>
+<%= render 'pages/sidenav' %>
 <div class="main-content" id="panel">
-  <%= render 'pages/dashboard/topnav' %>
+  <%= render 'pages/topnav' %>
   <div class="header bg-primary pb-6">
     <div class="container-fluid">
       <div class="header-body">
-        <%= render partial: 'pages/dashboard/header', locals: {
+        <%= render partial: 'pages/header', locals: {
               icon: 'home',
               breadcrumb_1: 'Dashboards',
               breadcrumb_2: 'Default'
