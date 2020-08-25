@@ -4,4 +4,7 @@ class PagesController < ApplicationController
 
   def icons
   end
+
+  def profile
+  end
 end

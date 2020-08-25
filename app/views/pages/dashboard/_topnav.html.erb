@@ -1,4 +1,10 @@
-<nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom">
+<%
+unless defined?(bg_color_class)
+  bg_color_class = 'bg-primary'
+end
+%>
+
+<nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom <%= bg_color_class %>">
   <div class="container-fluid">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <!-- Search form -->
