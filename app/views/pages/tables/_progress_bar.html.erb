@@ -1,0 +1,8 @@
+<div class="d-flex align-items-center">
+  <span class="completion mr-2"><%= percent %>%</span>
+  <div>
+    <div class="progress">
+    <div class="progress-bar <%= bg_class %>" role="progressbar" aria-valuenow="<%= percent %>" aria-valuemin="0" aria-valuemax="100" style="width: <%= percent %>%;"></div>
+    </div>
+  </div>
+</div>
