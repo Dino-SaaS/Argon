@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get 'pages/tables'
   get 'pages/login'
   get 'pages/register'
+  get 'pages/upgrade'
 end
