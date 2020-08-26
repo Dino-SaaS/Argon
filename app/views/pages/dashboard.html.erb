@@ -14,38 +14,40 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 -->
 <!DOCTYPE html>
-<%= render 'pages/sidenav' %>
-<div class="main-content" id="panel">
-  <%= render 'pages/topnav' %>
-  <div class="header bg-primary pb-6">
-    <div class="container-fluid">
-      <div class="header-body">
-        <%= render partial: 'pages/header', locals: {
-              icon: 'home',
-              breadcrumb_1: 'Dashboards',
-              breadcrumb_2: 'Default'
-        } %>
-        <%= render 'pages/dashboard/metrics_summary' %>
+<body>
+  <%= render 'pages/sidenav' %>
+  <div class="main-content" id="panel">
+    <%= render 'pages/topnav' %>
+    <div class="header bg-primary pb-6">
+      <div class="container-fluid">
+        <div class="header-body">
+          <%= render partial: 'pages/header', locals: {
+                icon: 'home',
+                breadcrumb_1: 'Dashboards',
+                breadcrumb_2: 'Default'
+          } %>
+          <%= render 'pages/dashboard/metrics_summary' %>
+        </div>
       </div>
+    </div>
+    <div class="container-fluid mt--6">
+      <div class="row">
+        <div class="col-xl-8">
+          <%= render 'pages/dashboard/charts/sales' %>
+        </div>
+        <div class="col-xl-4">
+          <%= render 'pages/dashboard/charts/orders' %>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-8">
+          <%= render 'pages/dashboard/tables/page_visits' %>
+        </div>
+        <div class="col-xl-4">
+          <%= render 'pages/dashboard/tables/social_traffic' %>
+        </div>
+      </div>
+      <%= render 'pages/footer' %>
     </div>
   </div>
-  <div class="container-fluid mt--6">
-    <div class="row">
-      <div class="col-xl-8">
-        <%= render 'pages/dashboard/charts/sales' %>
-      </div>
-      <div class="col-xl-4">
-        <%= render 'pages/dashboard/charts/orders' %>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xl-8">
-        <%= render 'pages/dashboard/tables/page_visits' %>
-      </div>
-      <div class="col-xl-4">
-        <%= render 'pages/dashboard/tables/social_traffic' %>
-      </div>
-    </div>
-    <%= render 'pages/footer' %>
-  </div>
-</div>
+</body>
