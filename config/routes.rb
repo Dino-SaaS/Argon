@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   get 'pages/icons'
   get 'pages/profile'
   get 'pages/tables'
+  get 'pages/login'
   get 'pages/register'
 end
