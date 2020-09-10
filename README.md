@@ -1,24 +1,33 @@
-# README
+# [Argon Starter App](https://www.dinosaas.com/articles/starter-app-1-argon)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Argon is a Rails app with an integrated Bootstrap Dashboard theme. It's built by [DinoSaaS](https://www.dinosaas.com/), with the Argon theme from [Creative Tim](https://www.creative-tim.com/product/argon-design-system).
 
-Things you may want to cover:
 
-* Ruby version
+![Argon Dashboard](https://res.cloudinary.com/do0vbqz18/image/upload/v1599750892/DinoSaas/argon-dashboard.png)
 
-* System dependencies
+## Getting Started
+Clone the repo:
 
-* Configuration
+`git clone git@github.com:Dino-Saas/Argon.git argon-demo`
 
-* Database creation
+Download the right gems with the right versions (as specified in the `Gemfile`).
 
-* Database initialization
+`bundle install`
 
-* How to run the test suite
+Update Yarn packages as specified in `package.json`.
 
-* Services (job queues, cache servers, search engines, etc.)
+`yarn install`
 
-* Deployment instructions
+Start up your server.
 
-* ...
+`rails server`
+
+Point your browser to http://localhost:3000 and check out your stunning new Rails dashboard!
+
+## Diving into the codebase
+For a deep-dive into the codebase, and a demo walking you through how to customize it, check out [the article on DinoSaaS](https://www.dinosaas.com/articles/starter-app-1-argon).
+
+## License
+[Licensed under MIT](https://github.com/Dino-SaaS/Argon/blob/master/LICENSE.md).
+
+Original Argon Bootstrap theme - Copyright © 2020 Creative Tim (https://www.creative-tim.com)
