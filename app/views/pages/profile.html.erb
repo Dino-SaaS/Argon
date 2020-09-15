@@ -1,19 +1,16 @@
-<body>
-  <%= render 'pages/sidenav' %>
-  <div class="main-content" id="panel">
-    <%= render partial: 'pages/topnav', locals: { bg_color_class: 'bg-default' } %>
-    <%= render 'pages/profile/header' %>
-    <!-- Page content -->
-    <div class="container-fluid mt--6">
-        <div class="row">
-          <div class="col-xl-4 order-xl-2">
-            <%= render 'pages/profile/summary_card' %>
-          </div>
-          <div class="col-xl-8 order-xl-1">
-            <%= render 'pages/profile/edit_card' %>
-          </div>
+<% content_for(:topnav_bg) { 'bg-default' } %>
+
+<div class="main-content" id="panel">
+  <%= render 'pages/profile/header' %>
+  <!-- Page content -->
+  <div class="container-fluid mt--6">
+      <div class="row">
+        <div class="col-xl-4 order-xl-2">
+          <%= render 'pages/profile/summary_card' %>
         </div>
-      <%= render 'pages/footer' %>
-    </div>
+        <div class="col-xl-8 order-xl-1">
+          <%= render 'pages/profile/edit_card' %>
+        </div>
+      </div>
+    <%= render 'pages/footer' %>
   </div>
-</body>
