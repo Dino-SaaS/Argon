@@ -1,4 +1,4 @@
-# [Argon Starter App](https://www.dinosaas.com/articles/starter-app-1-argon)
+# [Argon App Template](https://www.dinosaas.com/articles/starter-app-1-argon)
 
 Argon is a Rails app with an integrated Bootstrap Dashboard theme. It's built by [DinoSaaS](https://www.dinosaas.com/), with the Argon theme from [Creative Tim](https://www.creative-tim.com/product/argon-dashboard/?ref=dinosaas.com).
 
